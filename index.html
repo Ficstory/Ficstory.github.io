@@ -5,63 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficstory's Portfolio</title>
     <style>
+        /* 폰트 및 기본 스타일 설정 */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Pretendard', 'Noto Sans KR', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f0f2f5; /* 배경색을 더 밝은 회색으로 변경 */
             color: #333;
             text-align: center;
+            line-height: 1.6;
         }
+        /* 헤더 디자인 변경 (파란색 그라데이션) */
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(120deg, #2980b9, #6dd5fa); /* 신뢰감 주는 파란색 */
             color: white;
-            padding: 100px 20px;
+            padding: 120px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .header h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             margin: 0;
-            font-weight: 700;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
         .header p {
-            font-size: 1.5rem;
-            opacity: 0.9;
-            margin-top: 10px;
+            font-size: 1.6rem;
+            opacity: 0.95;
+            margin-top: 15px;
+            font-weight: 500;
         }
+        /* 메인 컨테이너 */
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            max-width: 900px;
+            margin: -40px auto 40px; /* 헤더와 겹치게 올려서 입체감 부여 */
+            padding: 0 20px;
+            position: relative;
         }
+        /* 섹션 카드 디자인 */
         .section {
             background: white;
-            border-radius: 15px;
-            padding: 30px;
+            border-radius: 20px;
+            padding: 40px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
             text-align: left;
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px); /* 마우스 올리면 살짝 떠오르는 효과 */
         }
         .section h2 {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            color: #444;
+            border-bottom: 3px solid #3498db; /* 강조선 파란색으로 변경 */
+            padding-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-top: 0;
         }
+        /* 버튼 디자인 */
         .btn {
             display: inline-block;
-            background-color: #333;
+            background: linear-gradient(to right, #3498db, #2980b9);
             color: white;
-            padding: 10px 20px;
+            padding: 12px 30px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 50px;
             font-weight: bold;
-            margin-top: 20px;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+            transition: all 0.3s ease;
         }
         .btn:hover {
-            background-color: #555;
+            background: linear-gradient(to right, #2980b9, #3498db);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.6);
+        }
+        /* 프로젝트 링크 스타일 */
+        .project-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-link:hover {
+            text-decoration: underline;
         }
         /* 배지 스타일 */
         .badges img {
-            margin: 3px;
+            margin: 4px;
+        }
+        /* 리스트 스타일 */
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -103,17 +139,16 @@
             <ul>
                 <li>
                     <strong>Culture Cast Service</strong>: Axios 비동기 통신과 카카오맵 API를 활용한 공연 커뮤니티
-                    <br><a href="https://github.com/Ficstory/Culture-Cast-Service" target="_blank">View Code &rarr;</a>
+                    <br><a href="https://github.com/Ficstory/Culture-Cast-Service" target="_blank" class="project-link">View Code &rarr;</a>
                 </li>
-                <br>
                 <li>
                     <strong>Stock Sentiment Analysis</strong>: 토스증권 종목 토론방 크롤링 및 OpenAI 감성 분석 파이프라인
-                    <br><a href="https://github.com/Ficstory/Stock-Sentiment-Crawling" target="_blank">View Code &rarr;</a>
+                    <br><a href="https://github.com/Ficstory/AI-Practice-Lab/tree/master/Stock-Sentiment-Crawling" target="_blank" class="project-link">View Code &rarr;</a>
                 </li>
             </ul>
         </div>
 
-        <div style="text-align: center;">
+        <div style="text-align: center; margin-bottom: 50px;">
             <a href="https://github.com/Ficstory" class="btn">Visit My GitHub Profile</a>
         </div>
 
