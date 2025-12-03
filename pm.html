@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Jaeho's PM Portfolio</title>
+    <style>
+        /* 폰트 및 기본 스타일 설정 */
+        body {
+            font-family: 'Pretendard', 'Noto Sans KR', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+        }
+        /* 헤더 디자인 (PM의 신뢰감을 주는 네이비/블루 톤) */
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 100px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        .header p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+        /* 메인 컨테이너 */
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+            position: relative;
+        }
+        /* 섹션 카드 디자인 */
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            text-align: left;
+            transition: transform 0.2s ease;
+        }
+        .section h2 {
+            border-bottom: 2px solid #1e3c72;
+            padding-bottom: 12px;
+            color: #1e3c72;
+            font-size: 1.6rem;
+            margin-top: 0;
+            font-weight: 700;
+        }
+        .section h3 {
+            font-size: 1.2rem;
+            color: #444;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        /* 핵심 역량 리스트 */
+        .skill-list li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #1e3c72;
+        }
+        /* 버튼 디자인 */
+        .btn {
+            display: inline-block;
+            background-color: #1e3c72;
+            color: white;
+            padding: 12px 32px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 30px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2a5298;
+        }
+        /* 프로젝트 링크 스타일 */
+        .project-link {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        /* 배지 스타일 */
+        .badges img {
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Lee Jaeho</h1>
+        <p>Tech-Savvy Project Manager & AI Service Planner</p>
+        <p style="font-size: 1rem; opacity: 0.8; margin-top: 5px;">기술 문해력을 갖춘, 즉시 투입 가능한 PM</p>
+    </div>
+
+    <div class="container">
+        
+        <div class="section">
+            <h2>👋 About Me</h2>
+            <p>
+                안녕하세요! <strong>개발자와 비즈니스를 잇는 PM 이재호</strong>입니다.<br>
+                <strong>4년간의 NGO 팀장 경력</strong>으로 다져진 탁월한 소통 능력과 문서화 역량을 보유했습니다.<br>
+                SSAFY에서 <strong>Python/Django 기반의 웹 개발과 AI 프로젝트</strong>를 직접 수행하며 
+                개발 프로세스를 이해하고 기술적 의사결정을 내릴 수 있는 <strong>'Tech-Savvy'</strong>한 기획자로 성장했습니다.
+            </p>
+            <ul class="skill-list">
+                <li>🎯 <strong>Project Management:</strong> 이해관계자 조율, 일정 및 리스크 관리, 성과 지표(KPI) 수립</li>
+                <li>🗣️ <strong>Communication:</strong> 복잡한 요구사항의 구조화, 명확한 기능 명세서 작성</li>
+                <li>💻 <strong>Technical Literacy:</strong> Python, SQL, REST API 구조 이해, Git Flow 기반 협업</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🛠 Technical Literacy</h2>
+            <p style="font-size: 0.95rem; color: #666; margin-bottom: 15px;">
+                직접 코드를 읽고 흐름을 파악하여, 개발팀과 효율적으로 소통합니다.
+            </p>
+            
+            <div class="badges">
+                <h3>Architecture & Data Understanding</h3>
+                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+                <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white">
+                <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+                <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white">
+                
+                <h3>Collaboration Tools</h3>
+                <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+                <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+                <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🚀 Key Projects (Management & Planning)</h2>
+            <ul>
+                <li style="margin-bottom: 25px;">
+                    <strong style="font-size: 1.2rem;">Culture Cast: 위치 기반 커뮤니티 서비스</strong>
+                    <p style="margin: 5px 0;">
+                        <span class="highlight">[Role: PM/Leader]</span> 사용자 니즈(위치 기반 탐색)를 반영한 서비스 기획 및 애자일 프로젝트 총괄.<br>
+                        Git Flow 전략 도입 및 데일리 스크럼 주재로 협업 효율성 증대.
+                    </p>
+                    <a href="https://github.com/Ficstory/Culture-Cast-Service" target="_blank" class="project-link">View Project &rarr;</a>
+                </li>
+                <li>
+                    <strong style="font-size: 1.2rem;">Stock Sentiment Analysis: AI 여론 분석 파이프라인</strong>
+                    <p style="margin: 5px 0;">
+                        <span class="highlight">[Role: Tech Planner]</span> 생성형 AI(LLM)의 비즈니스 활용 가능성 검증 및 데이터 파이프라인 설계.<br>
+                        OpenAI API 연동 기획 및 비정형 데이터의 DB 구조화.
+                    </p>
+                    <a href="https://github.com/Ficstory/AI-Practice-Lab/tree/master/Stock-Sentiment-Crawling" target="_blank" class="project-link">View Project &rarr;</a>
+                </li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 50px;">
+            <a href="https://github.com/Ficstory" class="btn">Visit GitHub Profile</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
