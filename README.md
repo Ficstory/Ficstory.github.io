@@ -7,4 +7,5 @@ The primary portfolio is maintained at [Portfolio OS](https://portfolio-os-nine-
 ## Pages
 
 - `/`: lightweight landing page that links to Portfolio OS, GitHub, email, and featured work
+- `/style.css`: shared landing page styles
 - `/pm.html`: legacy PM portfolio URL, now redirected to `/`
